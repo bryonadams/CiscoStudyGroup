@@ -1,0 +1,485 @@
+###################################
+##   1.0 Network Fundamentals    ##
+###################################
+A router's interface was configured using SLAAC but the router did not learn a default route from it. What command should have been used to configure the interface? `ipv6 ...`?:
+- address autoconfig default
+A switch is powered on for the first time and receives a frame from a host. What will the switch do with the frame with an empty CAM table?:
+- flood
+A tech configures an SVI for management purposes with the correct IP information but cannot reach it. What command did they forget to use on the SVI?:
+- no shutdown
+An administrator asks you to take the class A network 10.0.0.0 and divide into two usable networks. What is the subnet mask for each network?:
+- 255.128.0.0
+Aside from EUI-64, what is another way a host will generate the interface ID portion of its IPv6 address when using SLAAC?:
+- Randomly
+Collisions are a symptom of what configuration mistake on an Ethernet interface?:
+- Duplex mismatch
+Hosts use what when using SLAAC to discover the first part of the address and prefix length?:
+- NDP
+How many hosts are available to use on a network with the mask 255.255.252.0?:
+- 1022
+How many subnets are available to use with the class B network 172.20.0.0 /18?:
+- 4
+Name the field in an Ethernet frame used for error correction:
+- FCS
+- frame check sequence
+Name the field in an IP packet used for error correction:
+- checksum
+On a MAC address, if the first bit is a 1, the address represents a ____ or ____ address in Ethernet.:
+- broadcast multicast
+Other than FE80::/10, what is another non-routable IPv6 prefix?:
+- FF02::/16
+Site A is allocated a /24 from corporate. You have already subdivided this network with a /25, two /27s, and a /30. What CIDR mask represents the largest remaining subnet at Site A?:
+- /27
+The friggin new guy statically assigned his PC as 172.19.100.255 255.255.248.0. He doesn't understand why it works. One of the things you explain to them is that this works because the broadcast address for that network is actually...:
+- 172.19.103.255
+The mask 255.255.255.252 is commonly used for what type of link?:
+- Point to point
+The network 192.168.4.0 needs to be divided into subnets that support one network of 100 hosts with the remaining subnets supporting 21 hosts. What two CIDR masks can we use to accomplish this while providing the maximum number of subnets?:
+- /25 /27
+- /27 /25
+The router you're logged into has tens of interfaces and subinterfaces. What command can you use to quickly identify what each interface is labeled as and the operational mode of the interface?:
+- show interfaces description
+This part of the MAC address will inform you which vendor manufactured the NIC.:
+- OUI
+To prevent Cisco IOS from trying to resolve mistyped commands, what configuration can you issue?:
+- transport preferred none
+What command can you type first to program Fa0/1 through Fa0/15 to use identical VLAN and port security settings?:
+- interface range fa0/1 - 15
+- interface range f0/1 - 15
+What command will print the CAM table?:
+- show mac address-table
+What command will print the table a switch uses to determine whether it will forward or flood a frame?:
+- show mac address-table
+What command will tell you the recent CPU utilization of a router and the processes it is running?:
+- show process cpu
+What is an alternative to DHCPv6 for hosts to use when dynamically configuring themselves?:
+- SLAAC
+What is the broadcast address of the network 192.168.100.24 /30?:
+- 192.168.100.27
+What is the network ID of a network on which 65.167.225.16 /20 resides?:
+- 65.168.224.0
+What mask will provide 23 hosts per network while wasting the least amount of IP addresses?:
+- 255.255.255.224
+What method do IPv6 hosts use to detect duplicate IPv6 addresses?:
+- DAD
+What needs to be configured on a layer 2 switch before you can utilize a syslog server or telnet to it?:
+- SVI
+What piece of information does a host not learn about when using DHCPv6, compared to DHCPv4?:
+- Default Router
+- Default route
+- Gateway
+What summary address (IP and mask) would encompass the following networks - 172.16.0.0 /16, 172.104.0.0 /15, 172.18.0.0 /16 ?:
+- 172.0.0.0 255.128.0.0
+What supplementary action is performed when handing out an IP address to see if it is already in use?:
+- Gratuitous ARP
+When configuring a banner spanning multiple lines, what must you use to mark the beginning and end of your banner message?:
+- Delimiter
+When running `sh sessions` the asterisk means it's the ____ ____ session.:
+- most recent
+Which type of link-local multicast address is generated using the last six hex digits of the unicast address?:
+- Solicited Node
+While in global config mode, what command could you type to display the config from NVRAM?:
+- do show startup-config
+Within a single 5 minute interval, S0/0/1 previously showed the amount of traffic and errors the interface saw when running the `sh int s0/0/1`. Now it shows no errors or traffic passed. What command was run?:
+- clear counters s0/0/1
+You're experiencing intermittent packet loss on Gi0/1. What abbreviated command would show whether or not you're taking errors on that interface?:
+- sh int Gi0/1
+- sh int G0/1
+- sh in Gi0/1
+- sh in G0/1
+Your PC is configured with the IP 10.0.2.45. You received a default gateway of 10.0.9.254 from the DHCP server. What is your subnet mask, assuming the smallest possible network?:
+- 255.255.240.0
+After STALE, what IPv6 neighbor state comes next, provided the neighbor still hasn't communicated?:
+- DELAY
+An IPv6 configured interface has sent an initial solicitation message, what state will the neighbor table show?:
+- INCMP
+Carriers use multiple WAN connection types of varying bandwidth capabilites, these include Digital Signal, T carrier, E carrier, and _______.:
+- Optical carrier
+The demarc (or demarcation point) refers to the boundary between the _______ and the customer:
+- service provider
+This cloud provider model has the provider manage nearly everything. A customer just uses whatever is provided.:
+- Software as a Service
+- SaaS
+This cloud provider model is where the customer really only manages some applications and the data used by them. The service provider does everything else.:
+- Platform as a Service
+- PaaS
+This cloud provider model is where the service provider manages the hardware and virtualization, but the operating system and other software is managed by the customer.:
+- Infrastructure as a Service
+- IaaS
+Three common WAN topologies are Full Mesh, Partial Mesh, and what?:
+- Hub and Spoke
+What IPv6 neighbor state do you expect to see in the neighbor table for a neighbor that hasn't communicated within the reachable time frame?:
+- STALE
+What is the IPv4 multicast address for EIGRP?:
+- 224.0.0.10
+When configuring a layer 3 Etherchannel, which interface(s) will have IP information configured?:
+- Port-channel
+When in PROBE state, an IPv6 interface is _________ the NS request and waiting for a response.:
+- resending
+When running `show ipv6 neighbors`, what state do you expect working connections to be in?:
+- REACH
+###################################
+##      2.0 Network Access       ##
+###################################
+802.1q trunking differs from ISL in that 802.1q adds an extra ____ to the original Ethernet header:
+- 4 byte 802.1q VLAN header
+- 4 byte header
+- 802.1q header
+A Cisco 3560 switch is connected to multiple devices from multiple vendors. What command will display information about each connected device?:
+- show lldp neighbors
+A new switch has been powered up for the first time. What needs to be done next to enable CDP globally?:
+- Nothing
+While logged into a Cisco 1841 router you want to learn the capabilities and IOS version of three directly connected Cisco devices. What command do you type?:
+- show cdp neighbors detail
+Broadcast messages has been wreaking havoc on a network segment, making the network unusable. What incident has occurred?:
+- Broadcast storm
+CDP is too noisy on the network. What command will limit CDP to once every 3 minutes without disabling it completely?:
+- cdp timer 180
+This command changes the native VLAN of a trunk port to 5?:
+- switchport trunk native vlan 5
+Typing `switchport nonegotiate` disables what feature of the switchport?:
+- Dynamic Trunking Protocol
+- dynamic trunking protocol
+- DTP
+- dtp
+Untagged frames on a 802.1q trunk are part of which VLAN?:
+- Native
+What dynamic switchport configuration will cause both switches to not negotiate a switchport mode if two switches use the same configuration?:
+- dynamic auto
+What encapsulation mode succeeded Cisco's ISL and supports VLANs on an Ethernet network?:
+- IEEE 802.1Q
+What two commands will disable CDP and enable LLDP, globally? ______ and ______. Enter the commands separated by a comma:
+- no cdp run, lldp run
+- lldp run, no cdp run
+After the spanning tree algorithm is run, what type of ports are on a root bridge?:
+- designated ports
+All STP bridge priorities are set to 0. What is used next to determine the root bridge?:
+- MAC Address
+When configuring a VLAN, the message `%Failed to create VLANs 1500` appears. What command will allow the creation of this VLAN on the switch?:
+- vtp mode transparent
+Which layer 2 feature is the IEEE technology for discovering information about connected devices?:
+- LLDP
+Which switchport type will not strip VLAN tagging information?:
+- trunk
+Without additional configuration, which VLAN range can be configured or modified?:
+- 2-1001
+You run the command `show vlans` and notice several switchports are not listed. This is because they are configured as ____ ports.:
+- trunk
+____ sets the time CDP retains a packet from a neighbor:
+- holdtime
+An STP root switch is configured with `spanning-tree vlan 4 priority 28672`. On a second switch, you configure `spanning-tree vlan 4 root secondary`. If all other switches are the default priority, what is the priority of the second switch?:
+- 28672
+A junior admin attempts to configure several interfaces on a router into an Etherchannel but it won't come up. All settings are default, physical interfaces are up up, but speed and duplex are manually set so they are the same. You explain to them that _________ _________ _____ cannot be bundled as the reason it doesn't work.:
+- different interface types
+For spanning-tree bridge IDs, what is the next bridge priority after 0?:
+- 4096
+How often do switches exchange BPDUs?:
+- every two seconds
+- every 2 seconds
+- 2 seconds
+If both the cost and upstream BID are tied, which BPDU value is used to break this tie?:
+- upstream port ID
+This is a good combination to use with Portfast to prevent someone from plugging in a switch where there was previously a host.:
+- BPDU Guard
+This nonproprietary Etherchannel standard works well with multi-vendor networks. Also known as 802.3ad. (use the acronym):
+- LACP
+This type of 802.1w RSTP port state is opposite a root port on a single link.:
+- Forwarding
+Type in the command to enable ports to transition to the forwarding state immediately.:
+- spanning-tree portfast
+What Cisco proprietary protocol negotiates trunking and encapsulation type between two connected devices?:
+- DTP
+What command enables BPDU Guard on all switch interfaces?:
+- spanning-tree portfast bpduguard default
+What is the default 802.1d STP cost of a 100Mb link?:
+- 19
+What is the default mode of STP running on a Cisco Catalyst switch?:
+- PVST+
+What is the default value of the Bridge ID?:
+- 32768
+What protocol prevents you from adding more uplinks between switches without using EtherChannel?:
+- Spanning Tree Protocol
+When using the 'show etherchannel summary' command, what does the 'u' flag signify?:
+- Unsuitable
+Which EtherChannel protocol is Cisco proprietary?:
+- PAgP
+Which STP function puts a port immediately into an error-disabled state when it receives a BPDU message?:
+- BPDU Guard
+Which STP function transitions a port immediate into a forwarding state?:
+- PortFast
+While operating in trunk mode, what command is used to shut off DTP?:
+- switchport nonegotiate
+With Rapid_PVST, what port state replaces blocking?:
+- discarding
+You have configured one side of your EtherChannel as passive. What mode should you use on the other side?:
+- active
+You run `show spanning-tree` on a Cisco switch with default configurations and see `spanning tree enabled protocol ieee`. What version of 802.1d is running?:
+- PVST+
+###################################
+##      3.0 IP Connectivity      ##
+###################################
+A Cisco network is already configured to use dynamic routing. You successfully implement OSPF, but routes do not appear in the routing table. What protocol is already configured?:
+- EIGRP
+A network is configured using IS-IS. What AD would you use to configure a floating static route for 192.168.8.0 /24 using the highest possible AD?:
+- 254
+A network is configured using OSPF. What AD would you use to configure a floating static route for 172.18.2.0 /28 using the lowest possible AD?:
+- 111
+A quick look at the output of `sh ip ro` lists a bunch of routes with an AD of 90. What routing protocol is configured on the network?:
+- EIGRP
+Armed with only the IP 10.0.1.2, what quick command will inform you which interface it is on?:
+- show ip route 10.0.1.2
+- show ip interfaces brief
+Configure a static route for 10.10.6.0 /24. It lives beyond 10.10.4.1.:
+- ip route 10.10.6.0 255.255.255.0 10.10.4.1
+Configure a static default route of 192.168.0.1.:
+- ip route 0.0.0.0 0.0.0.0 192.168.0.1
+When configuring an IPv6 static route using a link local address as the next hop, what else do you need to specify?:
+- Outbound interface
+Which routing protocol has an administrative distance of 90?:
+- EIGRP
+A layer 3 switch rejects the commands `show ip route` and `ip routing`. You speak with the admin who says the switch ASIC forwarding settings need to be adjusted and to run _______ in global configuration mode.:
+- sdm prefer
+A router has interfaces in both Area 0 and Area 5 of an OSPF network. What role in OSPF does this router act in?:
+- Area Border Router
+- ABR
+A router learns a route through both EIGRP and OSPF. Which route goes into the routing table?:
+- EIGRP
+Configure the most conservative OSPF network statement to match the following interfaces with a single line. Gi1/1 - 192.168.1.1/24, Gi1/2 - 192.168.3.1/24.:
+- network 192.168.0.0 0.0.3.255
+During the _______ OSPF state LSRs are sent to neighbors to request any LSAs missed during EXCHANGE and neighbors respond with LSUs.:
+- LOADING
+In a multi-access broadcast network, OSPF routers reach this state with routers other than the DR or BDR.:
+- 2-WAY
+In the ____ OSPF state, Hello packets have been received but bidirectional communication hasn't been established yet.:
+- INIT
+In the ________ OSPF state, routing information is exchanged. LSR/LSU may also be sent, though once LSRs begin transmitting neighbors are considered to be in the LOADING state instead.:
+- EXCHANGE
+Lack of priority when viewing the output of `show ip ospf neighbor` means the network is what type?:
+- Point to Point
+List the multicast IP addresses and port for HSRPv1 and HSRPv2. (a.b.c.d:port and e.f.g.h:port):
+- 224.0.0.2:1985 and 224.0.0.102:1985
+- 224.0.0.102:1985 and 224.0.0.2:1985
+OSPF Type 4 LSAs, generated by ABRs, inform members of an area how to reach which kind of member of the OSPF network?:
+- ASBR
+OSPF states other than FULL and 2-WAY are considered what kind of state?:
+- Transitory
+OSPF will prefer an __________ route to reach a remote subnet within an area, even if the path out and back into an area is technically a lower cost:
+- intra-area
+One of the differences between HSRPv1 and HSRPv2 is the number of digits used to represent what at the end of the MAC address?:
+- Group number
+The MAC address you see in an ARP is 0000.0C9F.F0A0. Based on this you know the neighboring router is running what?:
+- HSRPv2
+Routers establish adjacencies with one another and determine which will take on master or slave part of the relationship in this OSPF state.:
+- EXSTART
+Other than `show ip ospf interface`, what `show` command easily lists passive interfaces for OSPF?:
+- show ip protocols
+The FULL OSPF state only apples to relationships with which two routers in a multi-access broadcast network?:
+- DR and BDR
+The OSPF process is relevant to which router(s) in an OSPF network?:
+- Local
+This HSRP timer states how long an HSRP standby router will wait before thinking the active router is offline.:
+- Hold timer
+This OSPF state doesn't imply an interface is operationally down, but does mean no Hello packets are receied.:
+- DOWN
+Type 5 LSAs are ________ routes injected into OSPF by an ASBR using redistribution from a non OSPF source.:
+- external
+Very large LSDB and segmentation are two reasons to use which type of OSPF design?:
+- Multi-Area
+What OSPF LSA type identifies an advertising routers active interaces and IP information:
+- Type 1
+What area is typically used in single area OSPF configuration?:
+- Area 0
+What command would you use to see the amount of times SPF has been calculated for the OSPF process running under process number 5? There is more than one way to do this.:
+- show ip protocols
+- show ip ospf 5
+What is the max age of an OSPF LSA?:
+- 60 minutes
+What is the metric used in OSPF?:
+- Cost
+What is the virtual MAC address for HSRP when configuring the interface with `standby version 2` and `standby 1 ip 10.3.2.1`?:
+- 0000.0C9F.F001
+What letter represents internal EIGRP routes when viewing the output of 'show ip route' ?:
+- D
+What needs to be unique between OSPF routers?:
+- Router ID
+- RID
+- router-id
+When configuring HSRP; the version number, group number, and what else must match in the HSRP configuration?:
+- Virtual IP
+Which OSPF LSA type is used to send summaries between ABRs? Also referred to as Summary Link Advertisements.:
+- Type 3
+Which OSPF state only applies to non-broadcast multi-access networks?:
+- ATTEMPT
+Which command would you use to see the OSPF LSDB?:
+- show ip ospf database
+Which state must 2 OSPF neighbors become before exchanging the LSDB?:
+- 2-Way state
+Write the configuration statement that will make Gi1/2 no longer send Hello packets but still include the IPv4 network in the LSDB. Assume you are already in interface configuration mode:
+- ip ospf passive-interface
+Write the most conservative OSPF network statement to add only a specific interface into area 0, Gi0/0, which is configured with the IP 172.16.5.254 255.255.255.0.:
+- network 172.16.5.254 0.0.0.0 area 0
+Write the statement that will add Gi0/2's IPv6 network 2001:2:3:4::5/64 into area 1. OSPF is using 0 as the process ID.:
+- ipv6 ospf 0 area 1
+You've configured HSRPv2 on several routers but begin to see duplicate IP address messages in your syslog output. Assuming you correctly entered the version number on each router and there are no ACLs blocking traffic, what might the problem be?:
+- Incorrect group number
+###################################
+##        4.0 IP Services        ##
+###################################
+You're troubleshooting an issue where PCs sometimes do not receive DHCP leases in a recently expanded branch office. In particular, you're concerned if you have too few leases available for PCs. What command could confirm this for all of your pools at once?:
+- show ip dhcp pool
+A Cisco router at 10.10.4.1 is configured as the DHCP server in a network and a DNS server is correctly installed, configured, and working at 10.10.4.3. Clients succesfully receive a lease, but are unable to resolve addresses. What config is missing from the DHCP server?:
+- dns-server 10.10.4.3
+A Cisco router is set up as the DHCP server for a network, but client devices are unable to browse the web, check email, or talk to the IPs of servers on other subnets on the network. What part of the DHCP pool configuration was missed?:
+- default-router
+A lower NTP stratum tells you the priority is ____:
+- higher
+What command will start the NTP server but not the client?:
+- ntp master
+A router at a branch office is physically configured as follows - Fa0/1 facing the ISP & Fa0/2 faces the internal network. For clients to receive DHCP leases from the main office, which interface will need the IP helper configured on it?:
+- Fa0/2
+Describe the DHCPv4 process in a which a client requests a lease. You can spell this out or use the acronym:
+- Discover Offer Request Acknowledge
+- DORA
+Name two locations that syslog sends messages to by default.:
+- buffer console
+- buffer and console
+- console buffer
+- console and buffer
+The logging buffer on a switch is storing emergency, alert, and warning messages. What named logging level will store error messages in addition to the aforementioned?:
+- warning
+Assuming you have no access list preconfigured, what command will allow SSH sessions only, from the prompt `R7(config-line)#`?:
+- transport input ssh
+To log router messages to a vty you are connected to via telnet, what command should you run?:
+- terminal monitor
+To set 172.18.7.254 as your DNS server, what command do you type?:
+- ip name-server 172.18.7.254
+To set syslog to only send warnings or more severe to a syslog server, what numbered command would you use?:
+- logging trap 4
+What command lists information about the current active DHCP leases?:
+- show ip dhcp binding
+What command will store only logging level 4 and more severe errors in the RAM buffer? Use the name instead of the number.:
+- logging buffer warning
+What commands will tell syslog to use sequential numbers on messages?:
+- service sequence-numbers
+What do you add to an interface to retransmit broadcasts to another network, such as DHCP request or for a TFTP server?:
+- ip helper-address
+Which numerical logging level command will log Informational level messages to the console?:
+- logging console 6
+While working for kittygifs.com, you're attempting to configure SSH you receive the message `% Please define a domain-name first.` What command will resolve this error?:
+- ip domain-name kittygifs.com
+Without performing a `sh run` how would you see information about the DHCP pool `meowcat`?:
+- show ip dhcp pool meowcat
+Your boss visited /r/sysadmin and believes DNS is always the problem. He wants to configure static DNS mappings on the router. What command maps the host ad-serv-1 to 10.10.4.5?:
+- ip host ad-serv-1 10.10.4.5
+Also known as buffering, what happens to packets as they are held up in an egress interface during congestion?:
+- Queuing
+Cisco WRED drops traffic based on ______ to drop traffic during congestion so that sensitive traffic, such as video, does not suffer.:
+- weights
+Ethernet uses this type of marking on frames to perform QoS:
+- Class of Service
+One of the major benefits of SNMPv3 is its use of this security enhancement on communication between agents and managers.:
+- Encryption
+One way voice traffic should have latency of less than ___ms and jitter of less than __ms. Separate your answers with a comma.:
+- 150, 30
+This describes how packets are chosen when sending out of a congested link? Strict, Round Robin, and Weighted Fair are three such mechanisms of this.:
+- Scheduling
+This highly CPU intensive method for identifying traffic compares packet payload to a signature database.:
+- NBAR
+This is used to indicate a 3 bit subset of a Diffserv value using the same field as IP Precendence.:
+- Class Selector
+This newer queuing method is similar to CBWFQ but provides bandwidth and latency guarentees.:
+- LLQ
+This part of a network is where DSCP/COS values begin or stop having meaning on a network and is the section of the network that the administrator maintains:
+- Trust boundary
+This queuing method acts on packets in the order they arrive.:
+- First in first out
+This type of marking is used on IP packets as a replacement for IPP, though it is backwards compatible.:
+- DSCP
+This type of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network.:
+- Voice
+This type of traffic is bursty, can be very large at times, but isn't terribly sensitive to delays or drops as TCP retransmits can account for lost traffic.:
+- Data
+What SNMP operation attempts to retrieve successive MIB objects from a device when it polls?:
+- WALK
+What SNMP operation attempts to write to the device?:
+- SET
+What is the well known DSCP value used for voice traffic?:
+- 46
+What type of SNMP message is sent when a node immediately tells an NMS station that something happened but does not provide any acknowledgement? Ex - Interface down:
+- Trap
+Which SNMP version doesn't use communities?:
+- 3
+Which operation mode of NBAR will monitor and provide statistics on traffic, but not take action on the traffic by classifying it?:
+- Passive
+Without NBAR, what other information on a packet can be used to identify how traffic should be handled other than layer 2 or 3 information?:
+- Port number
+___ describes how traffic is handled so that more sensitive services are prioritized:
+- QoS
+______ are used on the ingress side of a connection to immediately drop traffic without queuing it. They generate significant TCP resends when being hit.:
+- Policers
+______ is done on the egress side of a connection to smooth traffic out so that resends and drops are less frequent.:
+- Shaping
+###################################
+##   5.0 Security Fundamentals   ##
+###################################
+A new port, Fa0/2, is configured with port security mode of protect. When running `sh port-sec fa0/2` the port security field lists it as Disabled. What command was not typed?:
+- switchport port-security
+A port is configured with port security and nothing is currenlty connected. What is the expected port status when running `show port-security` on that specific port?:
+- secure-down
+A switchport is shown in an `err-disabled` state. What command(s) need to be run to re-enable the port?:
+- shut no shut
+What command sets the privileged mode password to 'mountain4k' and encrypts it?:
+- enable secret mountain4k
+Fa0/8 is in a err-disabled state after port security triggered. What command will list the source MAC of the offending frame?:
+- show port-security interface Fa0/8
+Port security disabled a port and you re-enabled the port. What state was it in?:
+- err-disable
+The `access-list` command begins the creation of which type of access list?:
+- numbered
+The `ip access-list` command begins the creation of which type of access list?:
+- named
+What is the default violation mode for a port using port security?:
+- shutdown
+Which port security violation mode will drop the frame, log a message, incrememnt a violation counter, and send an SNMP trap, then take no further actions?:
+- restrict
+Which port security violation mode will not send an SNMP trap?:
+- protect
+You configure a new router, configuring a list of local usernames and passwords. When you attempt to telnet to it, you receive the message `Password required but none set` before being disconnected. What configuration would resolve this on the vty lines?:
+- login local
+You wish to configure port security so that only a specific device will be able to use the port, but do not know the MAC address of that device. What port security feature would allow the switch to learn the MAC and save it in the running config?:
+- Sticky MAC
+Your predecessor did not encrypt any of the passwords on devies the network. What command will encrypt all of the passwords without changing them?:
+- service password-encryption
+IPv6 access lists are different from IPv4 access lists in that ____ is also implicitly permitted at the end, before `deny ipv6 any any`.?:
+- NDP
+Self pings on an Ethernet interface send the packet up and down the router's own TCP stack and the ICMP packet does not leave the router. If the interface is configured with correct IPs and is up/up, what security feature in IOS would prevent a self ping ICMP packet from completing?:
+- Inbound ACL
+What AAA system was developed by Cisco and is proprietary?:
+- TACACS+
+What LAN switch feature listens to untrusted ports for DHCP messages from potential attackers?:
+- DHCP snooping
+What command applies the IPv6 access list 'meowcat' to Fa0/1 to match inbound traffic? Assume you're already in the correct configuration mode.:
+- ipv6 traffic-filter meowcat in
+What is another name for the client who wishes to authenticate during 802.1x?:
+- Supplicant
+What part of the 802.1x process acts as a proxy between the supplicant and authentication server?:
+- Authenticator
+Which IEEE standard secures access to the LAN by authenticating connected devices?:
+- 802.1x
+You attempt to configure an extended ACL, `access-list 2020 permit ip 10.0.2.0 0.0.0.255 host 172.16.2.3 eq 514` but IOS generates an error when you hit enter. After reading your notes, you realise your error and retype the ACL as:
+- access-list 2020 permit tcp 10.0.2.0 0.0.0.255 host 172.16.2.3 eq 514
+########################################
+## 6.0 Automation and Programmability ##
+########################################
+In SDN, _______ no longer refer to just physical ports on a device but also refer to things like a REST API.:
+- interfaces
+In SDN, devices traditionally use these to communicate between a model layer in a northward or southward direction.:
+- APIs
+In SDN, the _____ plane is abstracted away from routers/switches while the ____ plane remains on the device taking action on data.:
+- control data
+OpFlex, OpenFlow, and NETCONF are examples of what type of API?:
+- Southbound
+This API describes the communcation between SDN applications and the controllers in a network.:
+- Northbound API
+This API describes the communcation between controllers and the network devices in an SDN network.:
+- Southbound API
