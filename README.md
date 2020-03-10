@@ -1,5 +1,5 @@
 # CiscoStudyGroup
-Trivia questions developed by the Cisco Study Group Discord community. https://discord.gg/pPCWMmq
+Trivia questions created by the Cisco Study Group Discord community. https://discord.gg/pPCWMmq
 
 ---
 
