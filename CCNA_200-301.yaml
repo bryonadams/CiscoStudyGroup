@@ -57,7 +57,7 @@ What is an alternative to DHCPv6 for hosts to use when dynamically configuring t
 What is the broadcast address of the network 192.168.100.24 /30?:
 - 192.168.100.27
 What is the network ID of a network on which 65.167.225.16 /20 resides?:
-- 65.168.224.0
+- 65.167.224.0
 What mask will provide 23 hosts per network while wasting the least amount of IP addresses?:
 - 255.255.255.224
 What method do IPv6 hosts use to detect duplicate IPv6 addresses?:
@@ -118,6 +118,14 @@ When in PROBE state, an IPv6 interface is _________ the NS request and waiting f
 - resending
 When running `show ipv6 neighbors`, what state do you expect working connections to be in?:
 - REACH
+In an environment with potential for electrical interference, such as a factory, what kind of cabling would be helpful to connect network devices together with?: 
+ - fiber optic
+ - fiber
+ - single-mode
+ - single mode
+ - multimode
+ - multi-mode
+ - multi mode
 ###################################
 ##      2.0 Network Access       ##
 ###################################
@@ -148,6 +156,7 @@ What dynamic switchport configuration will cause both switches to not negotiate 
 - dynamic auto
 What encapsulation mode succeeded Cisco's ISL and supports VLANs on an Ethernet network?:
 - IEEE 802.1Q
+- dot1q
 What two commands will disable CDP and enable LLDP, globally? ______ and ______. Enter the commands separated by a comma:
 - no cdp run, lldp run
 - lldp run, no cdp run
@@ -322,6 +331,8 @@ Write the statement that will add Gi0/2's IPv6 network 2001:2:3:4::5/64 into are
 - ipv6 ospf 0 area 1
 You've configured HSRPv2 on several routers but begin to see duplicate IP address messages in your syslog output. Assuming you correctly entered the version number on each router and there are no ACLs blocking traffic, what might the problem be?:
 - Incorrect group number
+- wrong group number
+- group number mismatch
 ###################################
 ##        4.0 IP Services        ##
 ###################################
