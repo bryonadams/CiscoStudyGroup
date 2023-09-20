@@ -3171,17 +3171,17 @@
             logging buffer warning
         - id: 2
           text: >-
-            !!wrong_answer!!
+            logging buffer error
         - id: 3
           text: >-
-            !!wrong_answer!!
+            logging buffer informational
         - id: 4
           text: >-
-            !!wrong_answer!!
+            logging buffer critical
       explanation: >-
-        !!blah blah blah!!
+        The named logging level equivilent to 4 is "warning." You can use a mnemonic to help memorize these more easily such as "(E)very (A)wesome (C)isco (E)ngineer (W)ill (N)eed (I)cecream (D)aily." In the mnemonic you can see W for warnings is fourth from the end of the list. 
       tags:
-        - !!Exam_Topic!!
+        - 4.5 Describe the use of syslog features including facilities and levels
     prompt: >- 
             What commands will tell syslog to use sequential numbers on messages?
       type: "multiple choice"
