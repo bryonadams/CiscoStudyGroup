@@ -3150,17 +3150,17 @@
             show ip dhcp binding
         - id: 2
           text: >-
-            !!wrong_answer!!
+            show dhcp ip bindings
         - id: 3
           text: >-
-            !!wrong_answer!!
+            show dhcp
         - id: 4
           text: >-
-            !!wrong_answer!!
+            show ip dhcp leases
       explanation: >-
-        !!blah blah blah!!
+        The command to show the current DHCP leases is `show ip dhcp bindings` when run from a Cisco router or switch.
       tags:
-        - !!Exam_Topic!!
+        - 4.3 Explain the role of DHCP and DNS within the network
     prompt: >- 
             What command will store only logging level 4 and more severe errors in the RAM buffer? Use the name instead of the number.
       type: "multiple choice"
