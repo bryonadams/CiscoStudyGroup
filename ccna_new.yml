@@ -3192,17 +3192,17 @@
             service sequence-numbers
         - id: 2
           text: >-
-            !!wrong_answer!!
+            service set num
         - id: 3
           text: >-
-            !!wrong_answer!!
+            service numbers enable
         - id: 4
           text: >-
-            !!wrong_answer!!
+            service sequence-numbers enable
       explanation: >-
-        !!blah blah blah!!
+        To enable sequential sequence numbers on messages for syslog, use the global configuration command `serivce sequence-numbers`.
       tags:
-        - !!Exam_Topic!!
+        - 4.5 Describe the use of syslog features including facilities and levels
     prompt: >- 
             What do you add to an interface to retransmit broadcasts to another network, such as DHCP request or for a TFTP server?
       type: "multiple choice"
