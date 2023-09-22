@@ -3213,17 +3213,17 @@
             ip helper-address
         - id: 2
           text: >-
-            !!wrong_answer!!
+            dhcp relay
         - id: 3
           text: >-
-            !!wrong_answer!!
+            broadcast relay
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Retransmitting broadcasts is not possible.
       explanation: >-
-        !!blah blah blah!!
+        While DHCP relay is the general term for this feature, the configuration we add for Cisco IOS is `ip helper address`. IP Helpers work for multiple types of traffic, not just DHCP.
       tags:
-        - !!Exam_Topic!!
+        - 4.6 Configure and verify DHCP client and relay
     prompt: >- 
             Which numerical logging level command will log Informational level messages to the console?
       type: "multiple choice"
