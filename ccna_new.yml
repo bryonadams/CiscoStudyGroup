@@ -3234,17 +3234,17 @@
             logging console 6
         - id: 2
           text: >-
-            !!wrong_answer!!
+            logging console 3
         - id: 3
           text: >-
-            !!wrong_answer!!
+            logging console 7
         - id: 4
           text: >-
-            !!wrong_answer!!
+            logging console 1
       explanation: >-
-        !!blah blah blah!!
+        Informational messages are the most verbose before debugging. To enable this with a numerical configuration you'd configure `logging console 6` under the global configuration.
       tags:
-        - !!Exam_Topic!!
+        - 4.5 Describe the use of syslog features including facilities and levels
     prompt: >- 
             While working for kittygifs.com, you're attempting to configure SSH you receive the message `% Please define a domain-name first.` What was missed prior to configuring SSH?
       type: "multiple choice"
@@ -3276,19 +3276,19 @@
             show ip dhcp pool meowcat
         - id: 2
           text: >-
-            !!wrong_answer!!
+            show dhcp pools
         - id: 3
           text: >-
-            !!wrong_answer!!
+            show ip dhcp
         - id: 4
           text: >-
-            !!wrong_answer!!
+            show ip dhcp meowcat pool
       explanation: >-
-        !!blah blah blah!!
+        To view information about a specific DHCP pool "meowcat", you run the command `show ip dhcp pool meowcat`. This will display information about the usage and configuration of the pool, such as how many leases are in use. 
       tags:
-        - !!Exam_Topic!!
+        - 4.6 Configure and verify DHCP client and relay
     prompt: >- 
-            Your boss visited /r/sysadmin and believes DNS is always the problem. He wants to configure static DNS mappings on the router. What command maps the host ad-serv-1 to 10.10.4.5?
+            Your boss visited /r/sysadmin and believes DNS is always the problem. He wants to configure static hostname to IP mappings on the router. What command maps the host ad-serv-1 to 10.10.4.5?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3297,17 +3297,17 @@
             ip host ad-serv-1 10.10.4.5
         - id: 2
           text: >-
-            !!wrong_answer!!
+            ip dns server ad-serv-1 10.10.4.5
         - id: 3
           text: >-
-            !!wrong_answer!!
+            ip domain name ad-serv-1 10.10.4.5
         - id: 4
           text: >-
-            !!wrong_answer!!
+            ip host 10.10.4.5 ad-serv-1
       explanation: >-
-        !!blah blah blah!!
+        To set the hostname to IP mapping on a Cisco IOS device, run the command `ip host` and then the mapping with the hostname followed by the IP address. While this is useful to do in niche circumstances, a proper DNS server is the correct way to solve your boss's problem.
       tags:
-        - !!Exam_Topic!!
+        - 4.6 Configure and verify DHCP client and relay
     prompt: >- 
             Also known as buffering, what happens to packets as they are held up in an egress interface during congestion?
       type: "multiple choice"
