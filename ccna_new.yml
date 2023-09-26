@@ -3339,17 +3339,17 @@
             weights
         - id: 2
           text: >-
-            !!wrong_answer!!
+            priorities
         - id: 3
           text: >-
-            !!wrong_answer!!
+            costs
         - id: 4
           text: >-
-            !!wrong_answer!!
+            administrative distance
       explanation: >-
-        !!blah blah blah!!
+        The metric used to determine whether traffic should be dropped on WRED (Weighted Random Early Detection) is referred to as weight. These random drops help reduce congestion early before the queues become exhausted.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             Ethernet uses this type of marking on frames to perform QoS
       type: "multiple choice"
