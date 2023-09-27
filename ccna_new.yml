@@ -3381,38 +3381,38 @@
             Encryption
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Community String
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Hashing
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Obfuscation
       explanation: >-
-        !!blah blah blah!!
+        SNMPv3 adds encryption and username authentication that previous versions of SNMP do not have. SNMPv2c introduces community strings to help secure access but until v3 SNMP was cleartext.
       tags:
-        - !!Exam_Topic!!
+        - 4.4 Explain the function of SNMP in network operations
     prompt: >- 
-            One way voice traffic should have latency of less than ___ms and jitter of less than __ms. Separate your answers with a comma.
+            One way voice traffic should have latency of less than ___ms and jitter of less than __ms.
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            150, 30
+            150ms latency, 30ms jitter
         - id: 2
           text: >-
-            !!wrong_answer!!
+            30ms latency, 150ms jitter
         - id: 3
           text: >-
-            !!wrong_answer!!
+            500ms latency, 10ms jitter
         - id: 4
           text: >-
-            !!wrong_answer!!
+            150ms latency, 100ms jitter
       explanation: >-
-        !!blah blah blah!!
+        Ideally, latency and jitter should be low. Across the Internet or other very large networks a latency of 150ms and 30ms jitter should not be exceeded. Latency measures the time it takes for a packet to get from point A to B, while jitter measures the difference in latency between packets. A low jitter means that packets are arriving at regular latencies, which means conversation will sound more smooth and less choppy. Low latency allows a conversation to occur with little delay, which can be noticed when people on the phone talk over one another by mistake. 
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             This describes how packets are chosen when sending out of a congested link? Strict, Round Robin, and Weighted Fair are three such mechanisms of this.
       type: "multiple choice"
@@ -3423,17 +3423,17 @@
             Scheduling
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Queueing
         - id: 3
           text: >-
-            !!wrong_answer!!
+            QoS
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Dropping
       explanation: >-
-        !!blah blah blah!!
+        Scheduling determines how packets are chosen to transmit on a congested link, with different criteria affecting how they're chosen for forwarding. Things like DSCP marking can affect this. Queuing is the act of placing a packet in the buffer to be scheduled, or transmitted. QoS is too general of a term, though it isn't necessarily wrong there are parts of QoS that are about ingress into the queue or dropping packets.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             This highly CPU intensive method for identifying traffic compares packet payload to a signature database.
       type: "multiple choice"
@@ -3444,17 +3444,17 @@
             NBAR
         - id: 2
           text: >-
-            !!wrong_answer!!
+            WRED
         - id: 3
           text: >-
-            !!wrong_answer!!
+            QoS
         - id: 4
           text: >-
-            !!wrong_answer!!
+            802.1x
       explanation: >-
-        !!blah blah blah!!
+        NBAR, or Network Based Application Recognition, matches traffic payloads to a signature database in an attempt to identify what application traffic belongs to. This can be intensive as packets are processed and some policy is applied to them such as blocking gaming traffic.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             This is used to indicate a 3 bit subset of a Diffserv value using the same field as IP Precendence.
       type: "multiple choice"
