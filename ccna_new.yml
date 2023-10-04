@@ -3456,7 +3456,7 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This is used to indicate a 3 bit subset of a Diffserv value using the same field as IP Precendence.
+            This is used to indicate a three bit subset of a Diffserv value using the same field as IP Precendence.
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3465,19 +3465,19 @@
             Class Selector
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Traffic Identifier
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Quality of Service
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Traffic Selector
       explanation: >-
-        !!blah blah blah!!
+        In Diffserv there are eight values which map to its predecessor's, IP Precendence, values. Each of these values matches one of the three bit IP Precedence values. These eight values are referred to as Class Selectors.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This newer queuing method is similar to CBWFQ but provides bandwidth and latency guarentees.
+            This newer queuing method is similar to CBWFQ (Class-based WFQ), providing priority queuing in addition to bandwidth and latency guarantees.
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3486,17 +3486,17 @@
             LLQ
         - id: 2
           text: >-
-            !!wrong_answer!!
+            RED
         - id: 3
           text: >-
-            !!wrong_answer!!
+            WRED
         - id: 4
           text: >-
-            !!wrong_answer!!
+            WFQ
       explanation: >-
-        !!blah blah blah!!
+        Of the available options, LLQ (Low Latency Queing) provides bandwidth starvation prevention and bandwidth guarantees for traffic, while also providing strict priority queuing. This is advantageous for applications such as voice that need to be treated with higher priority. RED and WRED address tail drops specifically, and WFQ addresses bandwidth starvation primarily.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             This part of a network is where DSCP/COS values begin or stop having meaning on a network and also defines the section of the network that the administrator maintains
       type: "multiple choice"
