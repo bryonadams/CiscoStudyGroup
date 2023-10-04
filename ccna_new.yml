@@ -3519,26 +3519,26 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This queuing method acts on packets in the order they arrive.
+            Which queuing method acts on packets in the order they arrive.
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            First in first out
+            FIFO
         - id: 2
           text: >-
-            !!wrong_answer!!
+            WFQ
         - id: 3
           text: >-
-            !!wrong_answer!!
+            CQ
         - id: 4
           text: >-
-            !!wrong_answer!!
+            WRR
       explanation: >-
-        !!blah blah blah!!
+        FIFO (First In First Out) acts on packets in the order they are received. True to its name, the first packet to arrive will be the first packet to egress the interface queue. WFQ (Weighted Fair Queuing) acts more intelligently, using values and multiple queues to help move packets along so the first packet received may not always egress first. CQ (Custom Queuing) uses multiple queues with variable queue limits and traffic classification to determine which packets are sent out. WRR (Weighted Round Robin) uses weights where the weight is proportional to the number of packets being sent, these are configurable by the administrator.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             This type of marking is used on IP packets as a replacement for IPP, though it is backwards compatible.
       type: "multiple choice"
