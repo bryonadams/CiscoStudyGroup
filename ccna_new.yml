@@ -3494,7 +3494,7 @@
           text: >-
             WFQ
       explanation: >-
-        Of the available options, LLQ (Low Latency Queing) provides bandwidth starvation prevention and bandwidth guarantees for traffic, while also providing strict priority queuing. This is advantageous for applications such as voice that need to be treated with higher priority. RED and WRED address tail drops specifically, and WFQ addresses bandwidth starvation primarily.
+        Of the available options, LLQ (Low Latency Queuing) provides bandwidth starvation prevention and bandwidth guarantees for traffic, while also providing strict priority queuing. This is advantageous for applications such as voice that need to be treated with higher priority. RED and WRED address tail drops specifically, and WFQ addresses bandwidth starvation primarily.
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
