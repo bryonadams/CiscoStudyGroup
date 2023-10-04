@@ -3477,7 +3477,7 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This newer queuing method is similar to CBWFQ (Class-based WFQ), providing priority queuing in addition to bandwidth and latency guarantees.
+            What queuing method is similar to CBWFQ (Class-based WFQ), providing priority queuing in addition to bandwidth and latency guarantees?
       type: "multiple choice"
       correct_choice: 1
       choices:
