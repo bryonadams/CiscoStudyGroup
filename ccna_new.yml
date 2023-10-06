@@ -662,7 +662,7 @@
       choices:
         - id: 1
           text: >-
-            Gratuitous ARP
+            ARP Probe
         - id: 2
           text: >-
             ARP
@@ -671,9 +671,9 @@
             CDP
         - id: 4
           text: >-
-            GET
+            Gratuitous ARP
       explanation: >-
-        Of the available answers, Gratuitous ARP is the best answer. While it is ARP, it is more specifically an extra ARP to determine whether a client is using that IP as relying on ARP only could lead to stale IPs remaining in the consumed pool due to needing to wait for the ARP table to age out.
+        Of the available answers, ARP Probe is the best answer. While it is ARP, it is more specifically an extra ARP to determine whether a client is using that IP as relying on ARP only could lead to stale IPs remaining in the consumed pool due to needing to wait for the ARP table to age out. A Gratuitous ARP would be for if the interface changes IP and wants to inform other devices that it has a new IP.
       tags:
         - 4.3 Explain the role of DHCP and DNS within the network
     prompt: >- 
