@@ -3519,7 +3519,7 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            Which queuing method acts on packets in the order they arrive.
+            Which queuing method acts on packets in the order they arrive?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3540,7 +3540,7 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This type of marking is used on IP packets as a replacement for IPP, though it is backwards compatible.
+            What backwards compatible type of marking is used on IP packets as a replacement for IPP?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3549,40 +3549,40 @@
             DSCP
         - id: 2
           text: >-
-            !!wrong_answer!!
+            IPP+
         - id: 3
           text: >-
-            !!wrong_answer!!
+            CoS
         - id: 4
           text: >-
-            !!wrong_answer!!
+            FIFO
       explanation: >-
-        !!blah blah blah!!
+        DSCP (Differentiated Services Code Point) is the replacement for IPP (IP Precedence). Markings are backwards compatible, but limited to the number of combinations that are translated backwards due the the few bit options available in IPP. 
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This type of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network.
+            What type of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network?
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            Voice
+            RTP
         - id: 2
           text: >-
-            !!wrong_answer!!
+            SMB
         - id: 3
           text: >-
-            !!wrong_answer!!
+            TFTP
         - id: 4
           text: >-
-            !!wrong_answer!!
+            EIGRP
       explanation: >-
-        !!blah blah blah!!
+        RTP is the protocol used for transferring audio and video media data on real time calls and is important to prioritize and transfer efficiently on a network. SMB and TFTP are sensitive to latency, but they would not be prioritized, and EIGRP is not really sensitive to latency but it can be configured to account for latecny.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            This type of traffic is bursty, can be very large at times, but isn't terribly sensitive to delays or drops as TCP retransmits can account for lost traffic.
+            Of the following options, which type of traffic is bursty, can be very large at times, but isn't terribly sensitive to delays or drops?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3591,17 +3591,18 @@
             Data
         - id: 2
           text: >-
-            !!wrong_answer!!
+            VoIP
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Real-time video
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Management
       explanation: >-
-        !!blah blah blah!!
+        Data traffic is typically not sensitive to delays. While the contents of data traffic changes between different networks or organizations, it is frequently bursty as it is only generated on an as needed basis and delivered using TCP. TCP accounts for loss, requiring retransmits if they are detected, and so long as they aren't excessive TCP will reliably get the data delivered. 
       tags:
-        - !!Exam_Topic!!
+        - 1.5 Compare TCP to UDP
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             What SNMP operation attempts to retrieve successive MIB objects from a device when it polls?
       type: "multiple choice"
@@ -3609,20 +3610,20 @@
       choices:
         - id: 1
           text: >-
-            WALK
+            Walk
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Get
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Set
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Trap
       explanation: >-
-        !!blah blah blah!!
+        An SNMP Walk action is a series of successive GetNext requests to a host in order to query the full MIB tree of that host. GET would only return a single specified MIB value, SET would change a specific value, and TRAP is used for sending the status of a MIB value that can be alerted on to the NMS station.
       tags:
-        - !!Exam_Topic!!
+        - 4.4 Explain the function of SNMP in network operations
     prompt: >- 
             What SNMP operation attempts to write to the device?
       type: "multiple choice"
@@ -3630,20 +3631,20 @@
       choices:
         - id: 1
           text: >-
-            SET
+            Set
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Get
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Inform
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Response
       explanation: >-
-        !!blah blah blah!!
+        While SNMP is usually used to poll information from devices for monitoring purposes, you can also use an SNMP Set action to write values to a device for configuration as opposed to manually configuration. Get would return the value of a MIB, Inform messages are sent in response to Trap messages, and Response would be a message used to reply to a request from a manager such as a Get request.
       tags:
-        - !!Exam_Topic!!
+        - 4.4 Explain the function of SNMP in network operations
     prompt: >- 
             What is the well known DSCP value used for voice traffic?
       type: "multiple choice"
@@ -3654,19 +3655,19 @@
             46
         - id: 2
           text: >-
-            !!wrong_answer!!
+            24
         - id: 3
           text: >-
-            !!wrong_answer!!
+            56
         - id: 4
           text: >-
-            !!wrong_answer!!
+            32
       explanation: >-
-        !!blah blah blah!!
+        The DSCP value used for the actual voice stream in calls is 46. This traffic is usually RTP, which is different from SIP. SIP is usually DSCP 24, since it is not as essential to receive every SIP packet in a timely fashion as they only control signalling information such as call setup.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            What type of SNMP message is sent when a node immediately tells an NMS station that something happened but does not provide any acknowledgement? Ex - Interface down
+            What type of SNMP message is sent when a node immediately tells an NMS station that something happened but does not provide any acknowledgement? Eg, interface down
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3675,19 +3676,19 @@
             Trap
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Get
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Inform
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Set
       explanation: >-
-        !!blah blah blah!!
+        When a device is configured to send SNMP Trap messages, it will proactively inform an NMS of certain behaviors that happen rather than waiting for a poll from the NMS. Get and Set messages are sourced from an NMS, so they would not be the end device immediately informing the NMS of an issue or change. An Inform is the response to a Trap. 
       tags:
-        - !!Exam_Topic!!
+        - 4.4 Explain the function of SNMP in network operations
     prompt: >- 
-            Which SNMP version doesn't use communities?
+            Which SNMP version doesn't use communities and allows for secure communication?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3696,38 +3697,17 @@
             3
         - id: 2
           text: >-
-            !!wrong_answer!!
+            2c
         - id: 3
           text: >-
-            !!wrong_answer!!
+            2
         - id: 4
           text: >-
-            !!wrong_answer!!
+            1
       explanation: >-
-        !!blah blah blah!!
+        SNMP version 3 gets rid of the communities added in version 2c, adding encryption and users to the security available to SNMP. Versions 1 and 2 are not secure, sending all data in cleartext.
       tags:
-        - !!Exam_Topic!!
-    prompt: >- 
-            Which operation mode of NBAR will monitor and provide statistics on traffic, but not take action on the traffic by classifying it?
-      type: "multiple choice"
-      correct_choice: 1
-      choices:
-        - id: 1
-          text: >-
-            Passive
-        - id: 2
-          text: >-
-            !!wrong_answer!!
-        - id: 3
-          text: >-
-            !!wrong_answer!!
-        - id: 4
-          text: >-
-            !!wrong_answer!!
-      explanation: >-
-        !!blah blah blah!!
-      tags:
-        - !!Exam_Topic!!
+        - 4.4 Explain the function of SNMP in network operations
     prompt: >- 
             Without NBAR, what other information on a packet can be used to identify how traffic should be handled other than layer 2 or 3 information?
       type: "multiple choice"
@@ -3738,17 +3718,17 @@
             Port number
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Application type
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Payload
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Computer name
       explanation: >-
-        !!blah blah blah!!
+        NBAR relies on hueristic information to identify traffic. Without that, of the available options, port number is one way to identify traffic as well known ports are freqently used for things like web traffic or email. This is becoming less reliable as time goes on as more services shift to using TLS on port 443, so a combination of things are needed such as related DNS traffic or the SNI (server name information) on a TLS setup, or other details are needed to identify traffic.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             ___ describes how traffic is handled so that more sensitive services are prioritized
       type: "multiple choice"
