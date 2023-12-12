@@ -3802,17 +3802,17 @@
             switchport port-security
         - id: 2
           text: >-
-            !!wrong_answer!!
+            switchport port-security enable
         - id: 3
           text: >-
-            !!wrong_answer!!
+            port-security
         - id: 4
           text: >-
-            !!wrong_answer!!
+            switchport port-security violation restrict
       explanation: >-
-        !!blah blah blah!!
+        When configuring an interface to use port security, the features or behavior of port security is configured independently from actually enabling it. Enabling port security is performed by entering `switchport port-security` on the interface. This can be helpful by allowing you to configure exactly what you want to do with port security prior to enabling it, preventing a client device from accidentally being kicked off the network.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             A port is configured with port security and nothing is currenlty connected. What is the expected port status when running `show port-security` on that specific port?
       type: "multiple choice"
