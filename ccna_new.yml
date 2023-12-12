@@ -3730,7 +3730,7 @@
       tags:
         - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            ___ describes how traffic is handled so that more sensitive services are prioritized
+            What broader concept instructs devices on how to handle traffic so that more sensitive services are prioritized, using special markings on frames and packets?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3739,19 +3739,19 @@
             QoS
         - id: 2
           text: >-
-            !!wrong_answer!!
+            LLDP
         - id: 3
           text: >-
-            !!wrong_answer!!
+            DCSP
         - id: 4
           text: >-
-            !!wrong_answer!!
+            IPP
       explanation: >-
-        !!blah blah blah!!
+        Quality of Service (QoS) is a set of technologies and mechanisms that ensure traffic is handled appropriately, per the administrator or network needs. It includes DSCP, IPP, CoS, and other technologies.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            ______ are used on the ingress side of a connection to immediately drop traffic without queuing it. They generate significant TCP resends when being hit.
+            What are used on the ingress side of a connection to immediately drop traffic without queuing it. They generate significant TCP resends when being hit.
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3760,19 +3760,19 @@
             Policers
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Shapers
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Buffers
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Droppers
       explanation: >-
-        !!blah blah blah!!
+        Policers are the QoS mechanism that immediately drops traffic after a certain threshold. They are used on ingress to prevent a circuit from being overloaded or to enforce a certain threshold such as the amount of bandwidth an ISP provides to a customer.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
-            ______ is done on the egress side of a connection to smooth traffic out so that resends and drops are less frequent.
+            What is done on the egress side of a connection to smooth traffic out so that resends and drops are less frequent.
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3781,17 +3781,17 @@
             Shaping
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Policing
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Buffering
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Loading
       explanation: >-
-        !!blah blah blah!!
+        Shaping is the QoS mechanism used on egress, allowing queuing and smoother transit of traffic around a given threshold. These are used opposite a policer (usually) to prevent the policer from dropping excess traffic and requiring retransmits or preventing a poor end user experience.
       tags:
-        - !!Exam_Topic!!
+        - 4.7 Explain the forwarding per-hop behavior (PHB) for QoS such as classification, marking, queuing, congestion, policing, shaping
     prompt: >- 
             A new port, Fa0/2, is configured with port security mode of protect. When running `sh port-sec fa0/2` the port security field lists it as Disabled. What command was not typed?
       type: "multiple choice"
