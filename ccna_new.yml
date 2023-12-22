@@ -3823,17 +3823,17 @@
             secure-down
         - id: 2
           text: >-
-            !!wrong_answer!!
+            down
         - id: 3
           text: >-
-            !!wrong_answer!!
+            admin down
         - id: 4
           text: >-
-            !!wrong_answer!!
+            not-connect
       explanation: >-
-        !!blah blah blah!!
+        The port status for port security while nothing is connected is secure-down. These are similar to the administrative state for a port, as an example secure-shutdown would indicate an administratively disabled port.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             A switchport is shown in an `err-disabled` state. What command(s) need to be run to re-enable the port?
       type: "multiple choice"
@@ -3841,20 +3841,20 @@
       choices:
         - id: 1
           text: >-
-            shut no shut
+            shutdown, then no shutdown
         - id: 2
           text: >-
-            !!wrong_answer!!
+            port-security enable
         - id: 3
           text: >-
-            !!wrong_answer!!
+            port-status error enable
         - id: 4
           text: >-
-            !!wrong_answer!!
+            undisable
       explanation: >-
-        !!blah blah blah!!
+        When a port is disabled due to port security, it goes err-disable. To rectify this manually, administratively disable then enable the port once more. There is addtionally the option to configure err-disable recovery so the switch will perform recovery automatically.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             What command sets the privileged mode password to 'mountain4k' and encrypts it?
       type: "multiple choice"
@@ -3865,17 +3865,17 @@
             enable secret mountain4k
         - id: 2
           text: >-
-            !!wrong_answer!!
+            enable secret 5 mountain4k
         - id: 3
           text: >-
-            !!wrong_answer!!
+            enable password mountain 4k
         - id: 4
           text: >-
-            !!wrong_answer!!
+            enable password 7 mountain 4k
       explanation: >-
-        !!blah blah blah!!
+        Configuring a secret and using a plaintext phrase encrypts the phrase used for the password. Specifying a specific encryption used such as 5 or 7 assumes the password has already been hashed, so the password will not be "mountain4k" in these cases. Configuing a password rather than a secret does not encrypt the password used.
       tags:
-        - !!Exam_Topic!!
+        - 5.3 Configure and verify device access control using local passwords
     prompt: >- 
             Fa0/8 is in a err-disabled state after port security triggered. What command will list the source MAC of the offending frame?
       type: "multiple choice"
@@ -3886,17 +3886,17 @@
             show port-security interface Fa0/8
         - id: 2
           text: >-
-            !!wrong_answer!!
+            show mac-address table
         - id: 3
           text: >-
-            !!wrong_answer!!
+            show port-security table
         - id: 4
           text: >-
-            !!wrong_answer!!
+            show mac-address table Fa0/8
       explanation: >-
-        !!blah blah blah!!
+        The specific MAC used to trigger the disabled state is listed when viewing the output of `show port-security interface Fa0/8`. The MAC address table does not differentiate on MACs that violate port security.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             Port security disabled a port and you re-enabled the port. What state was it in?
       type: "multiple choice"
@@ -3907,19 +3907,19 @@
             err-disable
         - id: 2
           text: >-
-            !!wrong_answer!!
+            shutdown
         - id: 3
           text: >-
-            !!wrong_answer!!
+            not-connect
         - id: 4
           text: >-
-            !!wrong_answer!!
+            up
       explanation: >-
-        !!blah blah blah!!
+        When port security disables a port, it uses a unique state of err-disable. The port is not administratively disabled or up at this point, nor is it in an unconnected state.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
-            The `access-list` command begins the creation of which type of access list?
+            The `access-list 1` command begins the creation of which type of access list?
       type: "multiple choice"
       correct_choice: 1
       choices:
@@ -3928,38 +3928,17 @@
             numbered
         - id: 2
           text: >-
-            !!wrong_answer!!
+            NAT
         - id: 3
           text: >-
-            !!wrong_answer!!
+            extended
         - id: 4
           text: >-
-            !!wrong_answer!!
+            VLAN
       explanation: >-
-        !!blah blah blah!!
+        Numbered ACLs can either be extended or standard, the syntax for extended including ip at the front. Named lists are configured with a name instead of a number but are otherwise similar.
       tags:
-        - !!Exam_Topic!!
-    prompt: >- 
-            The `ip access-list` command begins the creation of which type of access list?
-      type: "multiple choice"
-      correct_choice: 1
-      choices:
-        - id: 1
-          text: >-
-            named
-        - id: 2
-          text: >-
-            !!wrong_answer!!
-        - id: 3
-          text: >-
-            !!wrong_answer!!
-        - id: 4
-          text: >-
-            !!wrong_answer!!
-      explanation: >-
-        !!blah blah blah!!
-      tags:
-        - !!Exam_Topic!!
+        - 5.6 Configure and verify access control lists
     prompt: >- 
             What is the default violation mode for a port using port security?
       type: "multiple choice"
