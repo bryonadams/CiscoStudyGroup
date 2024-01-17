@@ -3949,17 +3949,17 @@
             shutdown
         - id: 2
           text: >-
-            !!wrong_answer!!
+            restrict
         - id: 3
           text: >-
-            !!wrong_answer!!
+            protect
         - id: 4
           text: >-
-            !!wrong_answer!!
+            disable
       explanation: >-
-        !!blah blah blah!!
+        The default violation mode for port security is shutdown. When triggered, a port security enabled port will become err-disabled and require administrator intervention to enable it. Restrict mode does not shut down the port, but it does inform an administrator of violations via SNMP or Syslog. Protect mode do not shut down the port or inform the administrator, it simply does not forward traffic.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             Which port security violation mode will drop the frame, log a message, incrememnt a violation counter, and send an SNMP trap, then take no further actions?
       type: "multiple choice"
@@ -3970,38 +3970,38 @@
             restrict
         - id: 2
           text: >-
-            !!wrong_answer!!
+            protect
         - id: 3
           text: >-
-            !!wrong_answer!!
+            shutdown
         - id: 4
           text: >-
-            !!wrong_answer!!
+            shutdown vlan
       explanation: >-
-        !!blah blah blah!!
+        Restrict mode does not shut down the port, but it does inform an administrator of violations via SNMP or Syslog. Protect and shutdown do not inform the administrator, while shutdown vlan uses syslog instead of SNMP to inform the administrator.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
-            Which port security violation mode will not send an SNMP trap?
+            Which port security violation mode will send an SNMP trap?
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            protect
+            restrict
         - id: 2
           text: >-
-            !!wrong_answer!!
+            protect
         - id: 3
           text: >-
-            !!wrong_answer!!
+            shutdown
         - id: 4
           text: >-
-            !!wrong_answer!!
+            disable
       explanation: >-
-        !!blah blah blah!!
+        Restrict mode uses an SNMP trap to inform the administrator of a violation. Protect and shutdown do not do so. While not listed, shutdown vlan will send an SNMP trap.
       tags:
-        - !!Exam_Topic!!
+        - 5.7 Configure Layer 2 security features (DHCP snooping, dynamic ARP inspection, and port security)
     prompt: >- 
             You configure a new router, configuring a list of local usernames and passwords. When you attempt to telnet to it, you receive the message `Password required but none set` before being disconnected. What configuration would resolve this on the vty lines?
       type: "multiple choice"
@@ -4012,17 +4012,17 @@
             login local
         - id: 2
           text: >-
-            !!wrong_answer!!
+            login
         - id: 3
           text: >-
-            !!wrong_answer!!
+            password moreCisco301
         - id: 4
           text: >-
-            !!wrong_answer!!
+            secret moreCisco301
       explanation: >-
-        !!blah blah blah!!
+        While configuring authentication on the VTY would allow access, a list of local usernames and passwords was already configured. To use them for remote access, you can configure `login local` on the VTY.
       tags:
-        - !!Exam_Topic!!
+        - 5.3 Configure and verify device access control using local passwords
     prompt: >- 
             You wish to configure port security so that only a specific device will be able to use the port, but do not know the MAC address of that device. What port security feature would allow the switch to learn the MAC and save it in the running config?
       type: "multiple choice"
@@ -4033,7 +4033,7 @@
             Sticky MAC
         - id: 2
           text: >-
-            !!wrong_answer!!
+            
         - id: 3
           text: >-
             !!wrong_answer!!
