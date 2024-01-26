@@ -4180,17 +4180,17 @@
             Supplicant
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Authenticator
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Initiator
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Authorizer
       explanation: >-
-        !!blah blah blah!!
+        In the 802.1x process, the client that begins the authentication process is referred to as the "supplicant." It begins by communicating with the switch or an AP via EAP messaging.  The switch or AP is referred to as the Authenticator, functionally acting as a proxy between the client and the server that will accept or reject authentication. Initiator and authorizer are not conceptual terms for the hosts involved in 802.1x.
       tags:
-        - !!Exam_Topic!!
+        - 5.1 Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)
     prompt: >- 
             What part of the 802.1x process acts as a proxy between the supplicant and authentication server?
       type: "multiple choice"
@@ -4201,17 +4201,17 @@
             Authenticator
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Supplicant
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Authentication server
         - id: 4
           text: >-
-            !!wrong_answer!!
+            AnyConnect
       explanation: >-
-        !!blah blah blah!!
+        The device acting as the proxy, usually a switch or AP, is referred to as the Authenticator in 802.1x. The supplicant is the client device that is trying to connect to the network. The authentication server determines whether the device succeeds or fails to acquire network access. AnyConnect is a client VPN software, developed by Cisco.
       tags:
-        - !!Exam_Topic!!
+        - 5.1 Define key security concepts (threats, vulnerabilities, exploits, and mitigation techniques)
     prompt: >- 
             Which IEEE standard secures access to the LAN by authenticating connected devices?
       type: "multiple choice"
@@ -4243,17 +4243,17 @@
             access-list 2020 permit tcp 10.0.2.0 0.0.0.255 host 172.16.2.3 eq 514
         - id: 2
           text: >-
-            !!wrong_answer!!
+            access-list 2020 permit ip 10.0.2.0 ip 172.16.2.3 eq 514
         - id: 3
           text: >-
-            !!wrong_answer!!
+            access-list 2020 permit host 10.0.2.0 0.0.0.255 host 172.16.2.3 eq 514
         - id: 4
           text: >-
-            !!wrong_answer!!
+            access-list 1999 permit tcp 10.0.2.0 0.0.0.255 host 172.16.2.3
       explanation: >-
-        !!blah blah blah!!
+        Of the options listed, only `access-list 2020 permit tcp 10.0.2.0 0.0.0.255 host 172.16.2.3 eq 514` is valid syntax. When using an ACL to identify an IP, a port cannot additionally be included because the IP header of a packet does not contain a port. The TCP or UDP options must be used to build the ACL instead. Using host is only valid to idenitify a single IP, including a network mask is illegal syntax and you still need to inform the ACL to inspect IP, TCP, or UDP traffic. Standard ACL ranges also only identify the source IP of traffic, including either a Layer 4 protocol or destination IP is invalid.
       tags:
-        - !!Exam_Topic!!
+        - 5.6 Configure and verify access control lists
     prompt: >- 
             In SDN, _______ no longer refer to just physical ports on a device but also refer to things like a REST API.
       type: "multiple choice"
@@ -4264,17 +4264,17 @@
             interfaces
         - id: 2
           text: >-
-            !!wrong_answer!!
+            IP addresses
         - id: 3
           text: >-
-            !!wrong_answer!!
+            ports
         - id: 4
           text: >-
-            !!wrong_answer!!
+            MAC addresses
       explanation: >-
-        !!blah blah blah!!
+        Interfaces, a commonly used term to refer to a physical port on a network device, in SDN refer to the method a controller or device is available for programatic access. The acronym, API, stands for Application Programming Interface and is used to interact with a system programatically.
       tags:
-        - !!Exam_Topic!!
+        - 6.2 Compare traditional networks with controller-based networking
     prompt: >- 
             In SDN, devices traditionally use these to communicate between a model layer in a northward or southward direction.
       type: "multiple choice"
@@ -4285,17 +4285,17 @@
             APIs
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Ports
         - id: 3
           text: >-
-            !!wrong_answer!!
+            PDUs
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Encapsulation
       explanation: >-
-        !!blah blah blah!!
+        APIs are used in SDN to communicate between devices in a programatic fashion. REST APIs are a popular method, but others also exist such as SOAP. These allow devices to use a consistent format to communicate information that can be programatically created, inspected, or edited by software... or an unlucky human.
       tags:
-        - !!Exam_Topic!!
+        - 6.2 Compare traditional networks with controller-based networking
     prompt: >- 
             In modern SDN, the _____ plane is abstracted away from routers/switches while the device takes action on frame or packet headers without requiring a server or other source to reference.
       type: "multiple choice"
