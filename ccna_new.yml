@@ -4327,17 +4327,17 @@
             Southbound
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Northbound
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Inbound
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Outbound
       explanation: >-
-        !!blah blah blah!!
+        OpFlex, OpenFlow, and NETCONF are examples of southbound APIs. Southbound APIs are what the controller uses to communicate with the devices that are being automated, eg the interface on a switch or router. Northbound APIs are used to communicate between the applications and the controller, such as some orchestration software's web interface. 
       tags:
-        - !!Exam_Topic!!
+        - 6.3.b North-bound and south-bound APIs
     prompt: >- 
             This API describes the communcation between SDN applications and the controllers in a network.
       type: "multiple choice"
@@ -4345,20 +4345,20 @@
       choices:
         - id: 1
           text: >-
-            Northbound API
+            Northbound
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Southbound
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Inbound
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Outbound
       explanation: >-
-        !!blah blah blah!!
+        The applications used to direct or configure the automation use Northbound APIs to communication with the controller. REST APIs are a frequent example of it. Southbound describes the communication between the controller and the devices being automated.
       tags:
-        - !!Exam_Topic!!
+        - 6.3.b North-bound and south-bound APIs
     prompt: >- 
             Which wireless standard allows for up to 600Mbps and supports both 2.4 and 5Ghz?
       type: "multiple choice"
@@ -4444,44 +4444,44 @@
       tags:
         - 2.7 Describe physical infrastructure connections of WLAN components (AP,WLC, access/trunk ports, and LAG)
     prompt: >- 
-            !!WIFI QUESTION!!
+            This encryption protocol is used by AES and succeeds TKIP, making WPA2 much more secure than WPA.
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            !!right_answer!!
+            CCMP
         - id: 2
           text: >-
-            !!wrong_answer!!
+            MIC
         - id: 3
           text: >-
-            !!wrong_answer!!
+            GCMP
         - id: 4
           text: >-
-            !!wrong_answer!!
+            GMAC
       explanation: >-
-        !!blah blah blah!!
+        CCMP, or Counter/CBC-MAC Protocol, is the encryption protocol in use by WPA2. AES encryption is the most secure encryption method available for wireless networks today. CCMP cannot be used on legacy devices that do not support WPA2. MIC stands for Message Integrity Check, which is a hash added to each frame to ensure integrity of the message. GCMP is used in WPA3, succeeding CCMP. GMAC is used for MIC in use with WPA3.
       tags:
-        - !!Exam_Topic!!
+        - 5.9 Describe wireless security protocols (WPA, WPA2, and WPA3)
     prompt: >- 
-            !!WIFI QUESTION!!
+            Which port on a WLC is used for normal AP or management traffic?
       type: "multiple choice"
       correct_choice: 1
       choices:
         - id: 1
           text: >-
-            !!right_answer!!
+            Distribution System Port
         - id: 2
           text: >-
-            !!wrong_answer!!
+            Service Port
         - id: 3
           text: >-
-            !!wrong_answer!!
+            Redundancy Port
         - id: 4
           text: >-
-            !!wrong_answer!!
+            Console Port
       explanation: >-
-        !!blah blah blah!!
+        Cisco WLC call the port that most management or wireless client traffic the "Distribution System Port." This physical port is usually connected to a trunk port on a switch so that multiple VLANs can be used for wireless client traffic. The service port is used for out of band management, initial configuration, system recovery, or boot functions. The redundancy port is strictly used for high availability (HA) when connected to other WLC. The console port functions the same as on any other Cisco device, client traffic will not traverse this port.
       tags:
-        - !!Exam_Topic!!
+        - 2.7 Describe physical infrastructure connections of WLAN components (AP,WLC, access/trunk ports, and LAG)
