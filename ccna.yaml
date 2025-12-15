@@ -173,8 +173,9 @@ Which layer 2 feature is the IEEE technology for discovering information about d
 - LLDP
 Which switchport type will not strip VLAN tagging information?:
 - trunk
-Without additional configuration, which VLAN range can be added, configured, or modified?:
+Without additional configuration, which VLAN range can be configured or modified?:
 - 2-1001
+- standard
 You run the command `show vlans` and notice several switchports are not listed. This is because they are configured as ____ ports.:
 - trunk
 ____ sets the time CDP retains information from a neighbor.:
@@ -303,6 +304,8 @@ What area is typically used in single area OSPF configuration?:
 What command would you use to see the amount of times SPF has been calculated for the OSPF process running under process number 5? There is more than one way to do this.:
 - show ip protocols
 - show ip ospf 5
+- show ip ospf
+- show ip ospf statistics
 What is the max age of an OSPF LSA?:
 - 60 minutes
 What is the metric used in OSPF?:
@@ -378,6 +381,7 @@ Also known as buffering, what happens to packets as they are held up in an egres
 - Queuing
 Cisco WRED drops traffic based on ______ to drop traffic during congestion so that sensitive traffic, such as video, does not suffer.:
 - weights
+- weight
 Ethernet uses this type of marking on frames to perform QoS:
 - Class of Service
 One of the major benefits of SNMPv3 is its use of this security enhancement on communication between agents and managers.:
