@@ -404,6 +404,7 @@ This part of a network is where DSCP/COS values begin or stop having meaning on 
 - Trust boundary
 This queuing method acts on packets in the order they arrive.:
 - First in first out
+- FIFO
 This type of marking is used on IP packets as a replacement for IPP, though it is backwards compatible.:
 - DSCP
 This type or cagetory of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network.:
