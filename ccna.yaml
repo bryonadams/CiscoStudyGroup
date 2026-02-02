@@ -89,6 +89,10 @@ You're experiencing intermittent packet loss on Gi0/1. What abbreviated command 
 - sh in G0/1
 Your PC is configured with the IP 10.0.2.45. You received a default gateway of 10.0.9.254 from the DHCP server. What is your subnet mask, assuming the smallest possible network?:
 - 255.255.240.0
+- /20
+- 10.0.2.45 255.255.240.0
+- 10.0.2.45/20
+- 10.0.2.45 /20
 After STALE, what IPv6 neighbor state comes next, provided the neighbor still hasn't confirmed reachability and the local device will send packets?:
 - DELAY
 An IPv6 configured interface has sent an initial solicitation message, what state will the neighbor table show?:
@@ -402,10 +406,16 @@ This queuing method acts on packets in the order they arrive.:
 - First in first out
 This type of marking is used on IP packets as a replacement for IPP, though it is backwards compatible.:
 - DSCP
-This type of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network.:
+This type or cagetory of traffic has a smooth data rate, is sensitive to latency and drops, and should be prioritized on a network.:
 - Voice
-This type of traffic is bursty, can be very large at times, but isn't terribly sensitive to delays or drops as TCP retransmits can account for lost traffic.:
+- Live Video
+- Video streaming
+- video
+This type or category of traffic is bursty, can be very large at times, but isn't terribly sensitive to delays or drops as TCP retransmits can account for lost traffic.:
 - Data
+- bulk data
+- bulk-data
+- dscp 0
 What SNMP operation attempts to retrieve successive MIB objects from a device when it polls?:
 - WALK
 What SNMP operation attempts to write to the device?:
