@@ -216,6 +216,8 @@ What is the default priority value used in the Bridge ID?:
 - 32768
 What protocol prevents you from adding more uplinks between switches without using EtherChannel?:
 - Spanning Tree Protocol
+- STP
+- Spanning Tree
 When using the 'show etherchannel summary' command, what does the 'u' flag signify?:
 - Unsuitable
 Which EtherChannel protocol is Cisco proprietary?:
